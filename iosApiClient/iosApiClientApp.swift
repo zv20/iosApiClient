@@ -11,7 +11,7 @@ import SwiftUI
 struct iosApiClientApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CustomerList()
         }
     }
 }
