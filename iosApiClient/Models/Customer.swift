@@ -6,7 +6,7 @@
 // hdhdh 
 
 import Foundation
-import Fluent
+
 
 
 struct Customer: Identifiable, Codable {
