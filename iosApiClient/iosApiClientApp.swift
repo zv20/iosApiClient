@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+
 @main
 struct iosApiClientApp: App {
     var body: some Scene {
         WindowGroup {
-            CustomerList()
+            Home()
+            
         }
+         
     }
 }

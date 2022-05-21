@@ -12,9 +12,11 @@ enum ModalType: Identifiable {
         switch self {
         case .add: return "add"
         case .update: return "update"
+       
         }
     }
     
     case add
-    case update(Customer)
+    
+    case update(Member)
 }
