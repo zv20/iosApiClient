@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "scanbarcodes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nasa-jpl/ScanBarcodes.git",
+      "state" : {
+        "revision" : "b408bd325f30bebd93b7f9fafa28bb6e12c42cfd",
+        "version" : "1.0.5"
+      }
+    }
+  ],
+  "version" : 2
+}

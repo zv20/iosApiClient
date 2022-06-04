@@ -16,8 +16,9 @@ struct Home: View {
     TabView {
             Menu()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label("Menu", systemImage: "house")
                 }
+        
             Load()
                 .tabItem {
                     Label("Load", systemImage: "plus")

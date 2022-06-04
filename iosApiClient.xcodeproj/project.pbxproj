@@ -24,6 +24,11 @@
 		73BDF918282837920048CAB0 /* MemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BDF917282837920048CAB0 /* MemberListViewModel.swift */; };
 		73BDF91A28283D3A0048CAB0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BDF91928283D3A0048CAB0 /* Home.swift */; };
 		73C23A892838764D00D2C2A0 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C23A882838764D00D2C2A0 /* ScanView.swift */; };
+		73C23A8F2838780200D2C2A0 /* ScanBarcodes in Frameworks */ = {isa = PBXBuildFile; productRef = 73C23A8E2838780200D2C2A0 /* ScanBarcodes */; };
+		73C23A9228387FC500D2C2A0 /* Barcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C23A9128387FC500D2C2A0 /* Barcode.swift */; };
+		73C23A942838805900D2C2A0 /* BarcodeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C23A932838805900D2C2A0 /* BarcodeListViewModel.swift */; };
+		73C23A972838814600D2C2A0 /* Barcodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C23A962838814600D2C2A0 /* Barcodes.swift */; };
+		73C23A9B2838846000D2C2A0 /* AddBarcodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C23A9A2838846000D2C2A0 /* AddBarcodeViewModel.swift */; };
 		73F8E98728306FCE00226778 /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8E98628306FCE00226778 /* Members.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,11 @@
 		73BDF917282837920048CAB0 /* MemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewModel.swift; sourceTree = "<group>"; };
 		73BDF91928283D3A0048CAB0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		73C23A882838764D00D2C2A0 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		73C23A9028387DE600D2C2A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		73C23A9128387FC500D2C2A0 /* Barcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcode.swift; sourceTree = "<group>"; };
+		73C23A932838805900D2C2A0 /* BarcodeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeListViewModel.swift; sourceTree = "<group>"; };
+		73C23A962838814600D2C2A0 /* Barcodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barcodes.swift; sourceTree = "<group>"; };
+		73C23A9A2838846000D2C2A0 /* AddBarcodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBarcodeViewModel.swift; sourceTree = "<group>"; };
 		73F8E98628306FCE00226778 /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C23A8F2838780200D2C2A0 /* ScanBarcodes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +90,14 @@
 		73279E17281B248100B71DBA /* iosApiClient */ = {
 			isa = PBXGroup;
 			children = (
+				73C23A952838812800D2C2A0 /* Barcode */,
+				73C23A9028387DE600D2C2A0 /* Info.plist */,
 				73279E18281B248100B71DBA /* iosApiClientApp.swift */,
-				73279E26281B24BD00B71DBA /* Models */,
 				73279E28281B24D300B71DBA /* Views */,
 				73279E27281B24C500B71DBA /* View Models */,
 				73279E1C281B248100B71DBA /* Assets.xcassets */,
+				73279E26281B24BD00B71DBA /* Models */,
+				73279E29281B24E500B71DBA /* Utilities */,
 				73279E1E281B248100B71DBA /* Preview Content */,
 			);
 			path = iosApiClient;
@@ -110,7 +124,6 @@
 			children = (
 				73BDF915282836C50048CAB0 /* AddUpdateMemberViewModel.swift */,
 				73BDF917282837920048CAB0 /* MemberListViewModel.swift */,
-				73279E29281B24E500B71DBA /* Utilities */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -119,13 +132,13 @@
 			isa = PBXGroup;
 			children = (
 				73BDF91928283D3A0048CAB0 /* Home.swift */,
-				7386A9B9282EE7500083684A /* Member Operations */,
 				7386A9C4282EF1E30083684A /* Load.swift */,
 				7386A9C6282EF1ED0083684A /* Unload.swift */,
 				7386A9C8282EF5160083684A /* Menu.swift */,
 				7386A9CA282EF8840083684A /* MySettings.swift */,
 				73F8E98628306FCE00226778 /* Members.swift */,
-				73C23A882838764D00D2C2A0 /* ScanView.swift */,
+				73BDF911282835180048CAB0 /* MemberList.swift */,
+				73BDF913282836260048CAB0 /* AddUpdateMember.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,13 +153,16 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		7386A9B9282EE7500083684A /* Member Operations */ = {
+		73C23A952838812800D2C2A0 /* Barcode */ = {
 			isa = PBXGroup;
 			children = (
-				73BDF911282835180048CAB0 /* MemberList.swift */,
-				73BDF913282836260048CAB0 /* AddUpdateMember.swift */,
+				73C23A9128387FC500D2C2A0 /* Barcode.swift */,
+				73C23A962838814600D2C2A0 /* Barcodes.swift */,
+				73C23A882838764D00D2C2A0 /* ScanView.swift */,
+				73C23A932838805900D2C2A0 /* BarcodeListViewModel.swift */,
+				73C23A9A2838846000D2C2A0 /* AddBarcodeViewModel.swift */,
 			);
-			path = "Member Operations";
+			path = Barcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +181,9 @@
 			dependencies = (
 			);
 			name = iosApiClient;
+			packageProductDependencies = (
+				73C23A8E2838780200D2C2A0 /* ScanBarcodes */,
+			);
 			productName = iosApiClient;
 			productReference = 73279E15281B248100B71DBA /* iosApiClient.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +212,9 @@
 				Base,
 			);
 			mainGroup = 73279E0C281B248100B71DBA;
+			packageReferences = (
+				73C23A8D2838780200D2C2A0 /* XCRemoteSwiftPackageReference "ScanBarcodes" */,
+			);
 			productRefGroup = 73279E16281B248100B71DBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,14 +249,18 @@
 				73BDF91A28283D3A0048CAB0 /* Home.swift in Sources */,
 				73F8E98728306FCE00226778 /* Members.swift in Sources */,
 				73BDF912282835180048CAB0 /* MemberList.swift in Sources */,
+				73C23A972838814600D2C2A0 /* Barcodes.swift in Sources */,
 				73BDF916282836C50048CAB0 /* AddUpdateMemberViewModel.swift in Sources */,
 				73C23A892838764D00D2C2A0 /* ScanView.swift in Sources */,
 				73BDF914282836260048CAB0 /* AddUpdateMember.swift in Sources */,
 				73279E19281B248100B71DBA /* iosApiClientApp.swift in Sources */,
+				73C23A9B2838846000D2C2A0 /* AddBarcodeViewModel.swift in Sources */,
 				7386A9CB282EF8840083684A /* MySettings.swift in Sources */,
 				73279E31281B2ABA00B71DBA /* Constants.swift in Sources */,
 				7386A9C7282EF1ED0083684A /* Unload.swift in Sources */,
+				73C23A942838805900D2C2A0 /* BarcodeListViewModel.swift in Sources */,
 				73BDF910282834580048CAB0 /* Member.swift in Sources */,
+				73C23A9228387FC500D2C2A0 /* Barcode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -345,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -366,12 +392,14 @@
 				DEVELOPMENT_TEAM = 744F8J6XGK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosApiClient/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,12 +424,14 @@
 				DEVELOPMENT_TEAM = 744F8J6XGK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iosApiClient/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +467,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73C23A8D2838780200D2C2A0 /* XCRemoteSwiftPackageReference "ScanBarcodes" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nasa-jpl/ScanBarcodes.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73C23A8E2838780200D2C2A0 /* ScanBarcodes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73C23A8D2838780200D2C2A0 /* XCRemoteSwiftPackageReference "ScanBarcodes" */;
+			productName = ScanBarcodes;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73279E0D281B248100B71DBA /* Project object */;
 }
